@@ -1,6 +1,5 @@
 use std::fs;
-use std::net::TcpListener;
-use std::net::TcpStream;
+use std::net::{TcpStream, TcpListener};
 use std::io::{Read, Write};
 
 fn main() {
