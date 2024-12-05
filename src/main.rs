@@ -29,7 +29,7 @@ fn handler_connection(mut stream: TcpStream) {
 
     let contents: String = fs::read_to_string(format!("src/{}", filename)).unwrap();
     let response: String = format!(
-        "HTTP/3 {}\nContent-Length: {}\n\n{}",
+        "HTTP/1.1 {}\nContent-Length: {}\n\n{}",
         status_line,
         contents.len(),
         contents
